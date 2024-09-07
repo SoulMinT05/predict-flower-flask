@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "B2113394.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "B2113394.py"
+        }
+    ]
+}
