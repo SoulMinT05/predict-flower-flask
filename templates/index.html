@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dự đoán loài hoa</title>
+    </head>
+    <body>
+        <h1>B2113394 - Nguyễn Minh Tâm</h1>
+        <h1>Dự đoán loài hoa</h1>
+        <form action="/predict" method="post">
+            <label for="sepal_length">Sepal Length:</label>
+            <input type="text" id="sepal_length" name="sepal_length" required /><br /><br />
+            <label for="sepal_width">Sepal Width:</label>
+            <input type="text" id="sepal_width" name="sepal_width" required /><br /><br />
+            <label for="petal_length">Petal Length:</label>
+            <input type="text" id="petal_length" name="petal_length" required /><br /><br />
+            <label for="petal_width">Petal Width:</label>
+            <input type="text" id="petal_width" name="petal_width" required /><br /><br />
+            <input type="submit" value="Dự đoán" />
+        </form>
+        <h2>{{ prediction_text }}</h2>
+    </body>
+</html>
